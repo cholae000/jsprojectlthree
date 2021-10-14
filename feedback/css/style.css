@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Mulish',sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    overflow: hidden;
+}
+
+.panel-container{
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 90%;
+    text-align: center;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-container{
+    display: flex;
+    margin: 20px 0;
+}
+
+.rating{
+    padding: 20px;
+    cursor: pointer;
+}
+
+.rating:hover,
+.rating.active{
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.rating img{
+    width: 40px;
+    display: block;
+    margin-bottom: 10px;
+}
+.rating small{
+    color: #555;
+}
+.rating:hover small,
+.rating.active small{
+    color: blue;
+}
+
+.btn{
+    color: #fff;
+    font-size: 15px;
+    background-color: #222;
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 5px;
+}
+.btn:focus{
+    outline: 0;
+}
+.btn:active{
+    transform: scale(0.95);
+}
+.fa-heart{
+    font-size: 30px;
+    color: red;
+}
